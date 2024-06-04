@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+            <h4>FLMツアーズ</h4>
+            <div class="full">
+                <div id="tabs">
+                    <input id="hotel" type="radio" name="tab_item" checked>
+                    <label class="tab_item" for="hotel">ホテル予約</label>
+
+                    <input id="pack" type="radio" name="tab_item">
+                    <label class="tab_item" for="pack">パッケージツアー予約</label>
+
+                    <input id="plane" type="radio" name="tab_item">
+                    <label class="tab_item" for="plane">航空券予約</label>
+                        
+                    <div class="reserves">
+                        <div class="tab_containts" id="hotel_containts">
+                            <span>宿泊日</span> <input type="text" ><br>
+                            <span>都市名</span> <input type="text" ><br>
+                            <input type="checkbox"><span>空き部屋のみ検索</span><br>
+                            <span>価格上限</span><input type="text">
+                        </div>
+                        <div class="tab_containts" id="pack_containts">
+                            パッケージツアー予約
+                        </div>
+                        <div class="tab_containts" id="plane_containts">
+                            航空券予約
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </body>
+</html>

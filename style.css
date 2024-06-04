@@ -1,0 +1,83 @@
+.base {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+}
+.left {
+    width: 50%;
+}
+   
+.right {
+    width: 50%;
+}
+
+.outputArea {
+    width: 100%;
+    height: 512px;
+    border: solid 1px;
+    overflow: scroll;
+}
+
+/* .reserves {
+    float:left;
+} */
+
+
+.tabs {
+    display: flex;
+    /* flex-direction: row;
+    align-items: center;
+    padding: 0 20px; */
+}
+
+
+
+.tab_item {
+    width: calc(100%/8);
+    height: 90px;
+    background-color: darkgrey;
+    line-height: 50px;
+    font-size: 15px;
+    text-align: center;
+    /* display: block; */
+    order: -1;
+}
+
+.tab_item:hover {
+    opacity: 0.75;
+}
+
+input[id="hotel"] {
+    display: none;
+}
+
+input[id="plane"] {
+    display: none;
+}
+
+input[id="pack"] {
+    display: none;
+}
+
+.tab_containts {
+    display: none;
+    
+}
+
+/* 選択されているタブの色を変える */
+input:checked + .tab_item {
+    background-color: #5ab4bd;
+    color: #fff;
+}
+
+#hotel:checked~.reserves #hotel_containts {
+	display: block;
+}
+
+#pack:checked~.reserves #pack_containts {
+	display: block;
+}
+
+#plane:checked~.reserves #plane_containts{
+    display: block;
+}
